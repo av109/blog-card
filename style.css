@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Figtree;
+    src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+:root {
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --grey500: hsl(0, 0%, 42%);
+    --grey900: hsl(0, 0%, 7%);
+}
+
+body {
+    background-color: var(--yellow);
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-self: center;
+
+    font-family: "Figtree", sans-serif;
+}
+
+article {
+    max-width: 380px;
+    height: 525px;
+    background-color: var(--white);
+
+    padding: 1em;
+
+    border-radius: 20px;
+    border: 1px solid var(--grey900);
+    box-shadow: 10px 10px var(--grey900);
+
+    display: flex;
+    flex-direction: column;
+}
+
+article img {
+    border-radius: 10px;
+}
+
+.but {
+    margin-top: 1em;
+    width: 100px;
+    background-color: var(--yellow);
+    border-radius: 4px;
+    text-align: center;
+    font-weight: 800;
+    padding: 0.4em;
+    color: var(--grey900);
+}
+
+.but:hover {
+    cursor: pointer;
+    background-color: black;
+    color: var(--white);
+}
+
+.date {
+    margin-top: 1em;
+}
+
+h3 {
+    margin-top: 1em;
+    color: var(--grey900);
+    font-size: 1.2em;
+    font-weight: 800;
+}
+
+h3+p {
+    /* Your styles here */
+    color: var(--grey500);
+    font-size: 1em;
+    margin-top: 0.5em;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+    gap: 10px;
+}
+
+.user>p {
+    font-weight: 800;
+}
+
+
+@media screen and (max-width: 420px) {
+    article {
+        max-width: 300px;
+        height: 450px;
+    }
+
+    .but,
+    p,
+    h3,
+    h3+p,
+    .user {
+        font-size: 0.9em;
+    }
+
+    .user img {
+        width: 60px;
+        height: 60px;
+    }
+
+}
