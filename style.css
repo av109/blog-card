@@ -25,6 +25,13 @@ body {
 
     font-family: "Figtree", sans-serif;
 }
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    flex-wrap: wrap;
+}
 
 article {
     max-width: 380px;
